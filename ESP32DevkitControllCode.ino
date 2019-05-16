@@ -10,9 +10,9 @@
 #include <BlynkSimpleEsp32.h>
 
 //Initialize variables for wifi name and password
-const char* ssid = "Martin Router King";
-const char* password = "princessleia";
-char auth[] = "ed108b6e871347aa9b557980b7d09125";
+const char* ssid = "your router name";
+const char* password = "its password";
+char auth[] = "your blynk auth code";
 
 bool initBluetooth(const char *deviceName) {
   /*This method starts bluetooth, renames it and returns if
@@ -36,7 +36,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   Blynk.begin(auth, ssid, password);
-  if(!initBluetooth("ESP32BT Fablab")){//Call the method initBluetooth and attempt to rename the device
+  if(!initBluetooth("Bluetooth Name")){//Call the method initBluetooth and attempt to rename the device
     Serial.println("Bluetooth init failed");
   };
 }
