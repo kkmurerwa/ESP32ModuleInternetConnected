@@ -1,3 +1,8 @@
+/*
+ * Arduino code to control an item without internet connection
+ * Author: Kenneth Murerwa
+ */
+
 //Display the output 
 #define BLYNK_PRINT Serial
 
